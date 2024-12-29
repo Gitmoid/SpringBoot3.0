@@ -61,7 +61,7 @@
 
                     <!-- Install parcel -->
                     <execution>
-                        <id>npm install parcel</id>
+                        <id>npm-install-parcel</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
@@ -72,7 +72,7 @@
 
                     <!-- Add custom content to package.json -->
                     <execution>
-                        <id>edit package.json</id>
+                        <id>edit-package-json</id>
                         <goals>
                             <goal>npx</goal>
                         </goals>
@@ -84,7 +84,7 @@
 
                     <!-- Install dependencies -->
                     <execution>
-                        <id>npm install react</id>
+                        <id>npm-install-react</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
@@ -95,7 +95,7 @@
 
                     <!-- Run Parcel -->
                     <execution>
-                        <id>npx run</id>
+                        <id>npx-run</id>
                         <goals>
                             <goal>npx</goal>
                         </goals>
