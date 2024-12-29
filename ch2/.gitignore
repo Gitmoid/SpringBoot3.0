@@ -33,3 +33,4 @@ build/
 .vscode/
 /node/
 /node_modules/
+/.parcel-cache/
