@@ -12,7 +12,7 @@
 
     <artifactId>ch3</artifactId>
     <name>Chapter 3</name>
-    <description>Creating a Web Application with Spring Boot</description>
+    <description>Querying for Data with Spring Boot</description>
 
     <properties>
         <java.version>23</java.version>
