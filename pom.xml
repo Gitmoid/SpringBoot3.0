@@ -19,6 +19,7 @@
     <modules>
         <module>ch2</module>
         <module>ch3</module>
+        <module>ch4</module>
     </modules>
 
 </project>
