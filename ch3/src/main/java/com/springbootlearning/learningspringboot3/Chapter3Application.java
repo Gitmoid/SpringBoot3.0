@@ -1,13 +1,13 @@
-package com.springbootlearning.learningspringboot3.ch2;
+package com.springbootlearning.learningspringboot3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Chapter2Application {
+public class Chapter3Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Chapter2Application.class, args);
+		SpringApplication.run(Chapter3Application.class, args);
 	}
 
 }

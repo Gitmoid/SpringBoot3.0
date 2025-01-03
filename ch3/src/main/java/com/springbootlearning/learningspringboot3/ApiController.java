@@ -1,4 +1,4 @@
-package com.springbootlearning.learningspringboot3.ch2;
+package com.springbootlearning.learningspringboot3;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,12 +17,12 @@ public class ApiController {
     }
 
     @GetMapping("/api/videos")
-    public List<Video> all() {
+    public List<VideoEntity> all() {
         return videoService.getVideos();
     }
 
     @PostMapping("/api/videos")
-    public Video newVideo(@RequestBody Video newVideo) {
+    public VideoEntity newVideo(@RequestBody NewVideo newVideo) {
         return videoService.create(newVideo);
     }
 }

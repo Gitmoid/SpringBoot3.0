@@ -1,6 +1,4 @@
-package com.springbootlearning.learningspringboot3.ch2;
-
-import com.springbootlearning.learningspringboot3.ch2.VideoService;
+package com.springbootlearning.learningspringboot3;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,14 +1,12 @@
 package com.springbootlearning.learningspringboot3;
 
 import jakarta.annotation.PostConstruct;
-
-import java.util.List;
-
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
-import org.springframework.data.domain.ExampleMatcher.StringMatcher;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 @Service
 public class VideoService {
@@ -33,10 +31,10 @@ public class VideoService {
             probe.setName(search.value());
             probe.setDescription(search.value());
         }
-        Example<VideoEntity> example = Example.of(probe,
-                ExampleMatcher.matchingAny()
-                        .withIgnoreCase()
-                        .withStringMatcher(StringMatcher.CONTAINING));
+        Example<VideoEntity> example = Example.of(probe, //
+                ExampleMatcher.matchingAny() //
+                        .withIgnoreCase() //
+                        .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING));
         return repository.findAll(example);
     }
 

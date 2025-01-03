@@ -1,4 +1,4 @@
-package com.springbootlearning.learningspringboot3.ch2;
+package com.springbootlearning.learningspringboot3;
 
 import org.springframework.stereotype.Service;
 
