@@ -10,30 +10,30 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>method-security</artifactId>
-    <name>Chapter 4 - Method Security</name>
-    <description>Securing an Application with Spring Boot and Method Security</description>
+    <artifactId>oauth</artifactId>
+    <name>Chapter 4 - OAuth</name>
+    <description>Securing an Application with Spring Boot and OAuth 2.0</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
