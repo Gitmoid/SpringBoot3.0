@@ -1,0 +1,12 @@
+spring.application.name: Chapter 4 - OAuth
+
+spring:
+  security:
+  oauth2:
+    client:
+      registration:
+        google:
+          clientId:*secret*
+          clientSecret:*blah*
+          
+          scope:openid,profile,email,https://www.googleapis.com/auth/youtube
