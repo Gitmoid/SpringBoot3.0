@@ -2,11 +2,11 @@ spring.application.name: Chapter 4 - OAuth
 
 spring:
   security:
-  oauth2:
-    client:
-      registration:
-        google:
-          clientId:*secret*
-          clientSecret:*blah*
-          
-          scope:openid,profile,email,https://www.googleapis.com/auth/youtube
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 443183155785-g588c42vp6fhldokuefhvan15l9ru36e.apps.googleusercontent.com
+            clientSecret: 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
+
+            scope: openid,profile,email,https://www.googleapis.com/auth/youtube

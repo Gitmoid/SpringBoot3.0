@@ -1,11 +1,10 @@
 package com.springbootlearning.learningspringboot3;
 
-import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.service.annotation.GetExchange;
 
 
-public interface YouTube {
+interface YouTube {
 
     @GetExchange("/search?part=snippet&type=video")
     SearchListResponse channelVideos(@RequestParam String channelId,
