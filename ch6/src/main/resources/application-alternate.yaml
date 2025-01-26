@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Chapter 6 YAML
+  mustache:
+    servlet:
+      expose-request-attributes: true
+
+app:
+  config:
+    header: Greetings from YAML-based settings!
+    intro: Chapter 6 YAML
+    users:
+      -
+        username: yaml1
+        password: password
+        authorities:
+          - ROLE_USER
+      -
+        username: yaml2
+        password: password
+        authorities:
+          - ROLE_USER
+      -
+        username: yaml3
+        password: password
+        authorities:
+          - ROLE_ADMIN
