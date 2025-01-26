@@ -21,7 +21,7 @@ public class HomeController {
 
   @GetMapping("/")
   public String index(Model model,
-    Authentication authentication) {
+                      Authentication authentication) {
     model.addAttribute("videos", videoService.getVideos());
     model.addAttribute("authentication", authentication);
     return "index";
@@ -29,15 +29,15 @@ public class HomeController {
 
   @PostMapping("/new-video")
   public String newVideo(@ModelAttribute NewVideo newVideo,
-    Authentication authentication) {
+                         Authentication authentication) {
     videoService.create(newVideo, authentication.getName());
     return "redirect:/";
   }
 
   @PostMapping("/search")
   public String universalSearch(@ModelAttribute Search search,
-    Model model,
-    Authentication authentication) {
+                                Model model,
+                                Authentication authentication) {
     List<VideoEntity> searchResults = videoService.search(search);
     model.addAttribute("search", search);
     model.addAttribute("videos", searchResults);
